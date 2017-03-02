@@ -9,19 +9,21 @@
   
  $(function(){
    
-   var name= $('#name').val();
-   var adj= $('#adj').val();
-   var sex= $('#gender').val();
-   $('p').html(name + "is a " + adj + gender )
-   var color =$('#color').val()
+   
+   
+   
+  
+  
    
    $('button').click(function(){
-     $('#username').val();
-     $('#adj').val();
-     $('#gender').val();
+     var name = $('#username').val();
+     var adj = $('#adj').val();
+    var gender = $('#gender').val();
      var color =$('#color').val()
-     console.log(color);
      
+      $('p').html(name + " is a " + adj + gender)
+   $('p').css(color )
+   
      
      
       });
@@ -46,21 +48,28 @@
     <hr>
     <br>
     
-    <p> What is your name? : </p>
+     What is your name? : 
     <input type="text" name="you" id="username"> 
      <br>
-    <p>Select an adjective to discribe yourself: </p>
+     <br>
+    Select an adjective to discribe yourself: <br>
+    
     <input type = "radio" name="adj" value= "fun" id= "adj"> Fun <br>
     <input type = "radio" name="adj" value= "cool" id="adj"> cool <br>
-    <input type = "radio" name="adj" value= "boring" id= "adj"> boring 
+    <input type = "radio" name="adj" value= "boring" id= "adj"> boring <br>
+    <br>
     
-    <p>What is your gender?</p> <br>
+    What is your gender? <br>
     
-    <input type ="checkbox" name="gender-1" value="female"> female
-     <input type ="checkbox" name="gender-2" value="male"> male <br>
-     <p>What is your favorite color?</p>
+    
+    <input type ="checkbox" name="gender-1" value="female" id= "gender"> female
+     <input type ="checkbox" name="gender-2" value="male" id="gender"> male <br> 
+     <br>
+     What is your favorite color? <br>
+     
      <input type="text" name="color" id="color"> <br>
      <br>
+     <p></p>
      
      <button>submit</button>
     
